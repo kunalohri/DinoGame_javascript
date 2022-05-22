@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.game-container{
+
+    background-image: url("../images/cartoon-game-background-vector-7926680.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.dino{
+    background-image: url("../images/kunal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 145px;
+    position: absolute;
+    bottom: 55px;
+    left: 20x;
+}
+
+.obstacle{
+    background-image: url("../images/ohri.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 155px;
+    position: absolute;
+    bottom: 55px;
+    left: 1300px;
+
+}
+.animateDino{
+    animation: dino .5s linear infinite;
+}
+.btn{
+    visibility: hidden;
+} 
+.btn .btnn{
+    position: absolute;
+    left: 650px;
+    color: ivory;
+    padding: 10px;
+    background-color: rgba(240, 128, 128, 0);
+    border-radius: 20px;
+    border: 2px solid black;
+    color: lightcyan;
+}
+.btn .btnn a{
+    text-decoration: none;
+}
+.btn .btnn:hover{
+    background-color: black;
+}
+.gameover{
+    visibility: hidden;
+    position: relative;
+    font-size: 100px;
+    left: 550px;
+    color: ivory;
+}
+.thanks{
+    visibility: hidden;
+    position: relative;
+    top: 100px;
+    font-size: 100px;
+    left: 100px;
+    color: ivory;
+}
+#scoreCount{
+
+    position: absolute;
+    font-size: 50px;
+    left: 600px;
+    color: ivory;
+
+}
+@keyframes dino {
+
+    0%{
+
+        bottom: 0;
+
+    }
+    
+    50%{
+
+        bottom: 422px;
+
+
+    }
+
+    100%{
+        
+        bottom: 0;
+      
+
+    }
+
+}
+.obstclesani{
+    animation: linear 6s infinite obstclesani;
+}
+@keyframes obstclesani {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
